@@ -150,7 +150,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('@OTT_Updated, url="https://t.me/OTT_Updated") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('@OTT_Updated', url="https://t.me/OTT_Updated") ] ] ),
                     
                 )
             except FloodWait as e:
