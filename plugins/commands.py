@@ -150,7 +150,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('MoviesDude_Linkzz', url="https://t.me/MoviesDude_LinkZz") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('Team_MDL', url="https://t.me/Team_MDL") ] ] ),
                     
                 )
             except FloodWait as e:
@@ -161,7 +161,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('MoviesDude_Linkzz', url="https://t.me/MoviesDude_Linkzz") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('Team_MDL', url="https://t.me/Team_MDL") ] ] ),
                 )
             except Exception as e:
                 logger.warning(e, exc_info=True)
@@ -223,7 +223,7 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('@MoviesDude_LinkZz', url="https://t.me/MoviesDude_linkzz") ] ] ),
+                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('Team_MDL', url="https://t.me/Team_MDL") ] ] ),
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
@@ -257,7 +257,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('@MoviesDude_Linkzz', url="https://t.me/MoviesDude_LinkZz") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('Team_MDL', url="https://t.me/Team_MDL") ] ] ),
     )
                     
 
